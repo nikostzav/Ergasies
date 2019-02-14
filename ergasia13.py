@@ -1,13 +1,14 @@
-numbers=[5,6,4,7,3,1]
-max=int(input("Megistos arithmos: "))
-pos=0
-sum=0
-x=[]
-for i in range(len(numbers)):
-    if sum+numbers[pos]<=max:
-        sum+=numbers[pos]
-        x.append(numbers[pos])
-        pos+=1
-    else:
-        pos+=1
-print(sum,x)
+def maxDistance(numbs,max):
+    pos=0
+    sum=0
+    x=[]
+    for i in range(len(numbs)):
+        if sum+numbs[pos]<=max:
+            sum+=numbs[pos]
+            x.append(numbs[pos])
+            pos+=1
+        else:
+            pos+=1
+    print(sum,x)
+maxDistance([1,5,2,7,3,5],15) #output
+
