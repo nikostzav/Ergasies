@@ -9,6 +9,6 @@ def maxDistance(numbs,max):
             pos+=1
         else:
             pos+=1
-    print(sum,x)
-maxDistance([1,5,2,7,3,5],15) #output
+    return sum
+print(maxDistance([2,6,4,7,3],8)) #<-- output
 
